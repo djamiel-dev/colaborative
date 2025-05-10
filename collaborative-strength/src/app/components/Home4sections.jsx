@@ -22,7 +22,7 @@ export default function Home4sections() {
   return (
     <div
       ref={ref}
-      className="relative w-full flex items-end"
+      className="relative w-full flex items-end text-[var(--dark)]"
       style={{
         height: "30vw",
         paddingBottom: "2vw",
@@ -48,7 +48,7 @@ export default function Home4sections() {
               style={{
                 width: "0.12vw",
                 height: line1Height,
-                backgroundColor: "black",
+                backgroundColor: "#161616",
               }}
             />
             <motion.div
@@ -63,7 +63,7 @@ export default function Home4sections() {
               <h3
                 style={{
                   fontSize: "4vw",
-                  fontWeight: "black",
+                  fontWeight: "800",
                 }}
               >
                 AMBITIE
@@ -86,7 +86,7 @@ export default function Home4sections() {
               style={{
                 width: "0.12vw",
                 height: line2Height,
-                backgroundColor: "black",
+                backgroundColor: "#161616",
               }}
             />
             <motion.div
@@ -101,7 +101,7 @@ export default function Home4sections() {
               <h3
                 style={{
                   fontSize: "4vw",
-                  fontWeight: "black",
+                  fontWeight: "800",
                 }}
               >
                 AANPAK
@@ -124,7 +124,7 @@ export default function Home4sections() {
               style={{
                 width: "0.12vw",
                 height: line3Height,
-                backgroundColor: "black",
+                backgroundColor: "#161616",
               }}
             />
             <motion.div
@@ -139,7 +139,7 @@ export default function Home4sections() {
               <h3
                 style={{
                   fontSize: "4vw",
-                  fontWeight: "black",
+                  fontWeight: "800",
                 }}
               >
                 SBD
@@ -162,7 +162,7 @@ export default function Home4sections() {
               style={{
                 width: "0.12vw",
                 height: line4Height,
-                backgroundColor: "black",
+                backgroundColor: "#161616",
               }}
             />
             <motion.div
@@ -177,7 +177,7 @@ export default function Home4sections() {
               <h3
                 style={{
                   fontSize: "4vw",
-                  fontWeight: "black",
+                  fontWeight: "800",
                 }}
               >
                 REFLECT

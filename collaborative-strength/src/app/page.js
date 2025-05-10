@@ -63,20 +63,16 @@ export default function Home() {
           </p>
         </div>
         <Home4sections />
-        <div className=" relative z-10 flex items-center flex-col pb-[10vw]">
-          <p className="text-[2.5vw] font-bold w-[55vw] pb-[2vw] text-center">
-            Je weet dat je sterker wilt worden, maar wat betekent powerlifing
-            écht voor=
-          </p>
-          <p className="text-[1.1vw]/[2vw] w-[45vw]">
-            Samen gaan we ontdekken waar jij het meeste plezier uithaalt en hoe
-            we daar een plan omheen bouwen. Progressie komt niet alleen door
-            harder trainen, maar vooral door een aanpak die past bij jouw
-            ambities en waar je langdurig gemotiveerd door blijft. Je doelen
-            hoeven nietvast te staan. We werken eraan, passen het aan waar
-            nodig, en zorgen ervoor dat jij blijft groeien.
-          </p>
+        <div className="flex w-full justify-center py-[5vw]">
+          <Button href="/diensten" text="DIENSTEN" />
         </div>
+        <h1 className="text-[5.5vw] font-black leading-[5vw] text-[var(--light-gray)] relative text-center w-[100vw] flex justify-center pt-[5vw]">
+          <span className="text-[var(--light-gray)] mix-blend-difference inline-block pb-[4vw]">
+            COLLABORATIVE
+            <br />
+            NAAR VERBETERINGEN
+          </span>
+        </h1>
       </section>
     </div>
   );

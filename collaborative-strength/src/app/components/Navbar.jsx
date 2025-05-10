@@ -13,9 +13,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 text-[var(--light-gray)] transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md bg-white/20 border-b border-white/20 shadow-sm"
+          ? "backdrop-blur-md  border-b bg-white/20 border-black/20 shadow-sm text-black"
           : "bg-transparent"
       }`}
     >
@@ -34,7 +34,7 @@ export default function Navbar() {
           <li>
             <a
               href="#home"
-              className="text-[var(--light-gray)] text-[1vw] hover:text-[var(--teal)] transition font-bold mix-blend-difference"
+              className=" text-[1vw] hover:text-[var(--teal)] transition font-bold"
             >
               Gratis schema
             </a>
@@ -42,7 +42,7 @@ export default function Navbar() {
           <li>
             <a
               href="#about"
-              className="text-[var(--light-gray)] text-[1vw] hover:text-[var(--teal)] transition font-bold mix-blend-difference"
+              className=" text-[1vw] hover:text-[var(--teal)] transition font-bold"
             >
               Diensten
             </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
           <li>
             <a
               href="#services"
-              className="text-[var(--light-gray)] text-[1vw] hover:text-[var(--teal)] transition font-bold mix-blend-difference"
+              className=" text-[1vw] hover:text-[var(--teal)] transition font-bold"
             >
               Over mij
             </a>
@@ -58,7 +58,7 @@ export default function Navbar() {
           <li>
             <a
               href="#blog"
-              className="text-[var(--light-gray)] text-[1vw] hover:text-[var(--teal)] transition font-bold mix-blend-difference"
+              className=" text-[1vw] hover:text-[var(--teal)] transition font-bold"
             >
               Blog
             </a>

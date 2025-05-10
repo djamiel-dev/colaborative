@@ -17,9 +17,9 @@ export default function AnimatedButton({
     >
       <div className="w-[18vw] h-[6vw]">
         <div
-          className={`backdrop-blur-md border border-white/20 justify-center items-center w-[18vw] h-[6vw] flex absolute transition-all duration-300 ${
+          className={`backdrop-blur-md border border-black/20 justify-center items-center w-[18vw] h-[6vw] flex absolute transition-all duration-300 ${
             isHovered ? "bg-[var(--teal)]/50" : "bg-[var(--light-gray)]/10"
-          }`}
+          } shadow-[0_0_2vw_1vw_rgba(0,0,0,0.1)]`}
         >
           <p
             className={`relative text-[1.4vw] font-bold transition-colors duration-300 ${
