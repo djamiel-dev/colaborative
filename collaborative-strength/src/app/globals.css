@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Basis kleur en font variabelen */
+:root {
+  --light-gray: #f9f9f9;
+  --dark: #161616;
+  --teal: #00d0d2;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* Als je specifiekere animaties wilt, kun je die hier toevoegen */
+@keyframes rotateArrow {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Algemene stijlen */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background: var(--light-gray);
+  font-family: var(--font-poppins);
+}
+
+a,
+a div,
+a svg,
+a div > div {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
