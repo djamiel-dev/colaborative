@@ -1,6 +1,7 @@
 import Button from "./components/Button";
 import ScrollDown from "./components/ScrollDown";
 import Home4sections from "./components/Home4sections";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
           className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-40"
           style={{ backgroundImage: "url('/backgroundwall.png')" }}
         ></div>
-        <div className=" relative z-10 flex items-center flex-col pb-[10vw]">
+        <div className=" relative z-10 flex items-center flex-col pb-[15vw]">
           <p className="text-[2.5vw] font-bold w-[55vw] pb-[2vw] text-center">
             Je weet dat je sterker wilt worden, maar wat betekent powerlifing
             écht voor jou?
@@ -67,12 +68,93 @@ export default function Home() {
           <Button href="/diensten" text="DIENSTEN" />
         </div>
         <h1 className="text-[5.5vw] font-black leading-[5vw] text-[var(--light-gray)] relative text-center w-[100vw] flex justify-center pt-[5vw]">
-          <span className="text-[var(--light-gray)] mix-blend-difference inline-block pb-[4vw]">
+          <span className="text-[var(--light-gray)] mix-blend-difference inline-block pb-[4vw] z-10">
             COLLABORATIVE
             <br />
             NAAR VERBETERINGEN
           </span>
         </h1>
+        {/* Nieuwe afbeeldingssectie */}
+        <div className="relative w-full flex justify-center items-center top-[-6.5vw]">
+          <div className="flex items-end" style={{ gap: "0.5vw" }}>
+            {/* Linker afbeelding */}
+            <div className="relative" style={{ width: "24vw", height: "33vw" }}>
+              <Image
+                src="/image2.png"
+                alt="Linker afbeelding"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Middelste afbeelding (groter) */}
+            <div className="relative" style={{ width: "31vw", height: "42vw" }}>
+              <Image
+                src="/image1.png"
+                alt="Middelste afbeelding"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Rechter afbeelding */}
+            <div className="relative" style={{ width: "24vw", height: "33vw" }}>
+              <Image
+                src="/image3.png"
+                alt="Rechter afbeelding"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div className=" relative z-10 flex items-center flex-col pb-[5vw]">
+          <p className="text-[2.5vw] font-bold w-[65vw] pb-[2vw] text-center">
+            Een passend trainings systeem ontwikkelen we door op wetenschap en
+            input van jou te handelen.
+          </p>
+          <p className="text-[1.1vw]/[2vw] w-[45vw]">
+            Bij mij ga je veel input geven, waar dat dan ook over mag gaan.
+            Externe variable, pijntjes, trainingsmotivatie en zelfs op de manier
+            hoe ik coach zijn zeer welkom, sterker nog, ik verwacht het. Ik
+            geloof er namelijk in dat iedereen powerliften anders beleeft. Ik
+            werk samen uit wat powerliften voor jou betekend en help naar de
+            passende persoonlijke doelen die we samen stellen.
+          </p>
+        </div>
+        <div className="flex w-full justify-center pb-[5vw]">
+          <Button href="/about" text="OVER MIJ" />
+        </div>
+      </section>
+      <section className="relative w-[100vw] min-h-[100vh] bg-[var(--dark)] text-[var(--light-gray)] py-[15vh]">
+        <h1 className="text-[5.5vw] font-black leading-[5vw] text-[var(--light-gray)] relative text-center w-[100vw] flex justify-center pt-[5vw]">
+          <span className="text-[var(--light-gray)] mix-blend-difference inline-block pb-[4vw] z-10">
+            FOCUS ZONDER CHAOS
+          </span>
+        </h1>
+        <div className="relative flex flex-row w-[80vw] left-[10vw] items-end top-[-6.5vw]">
+          <div className="relative" style={{ width: "15vw", height: "20vw" }}>
+            <Image
+              src="/image2.png"
+              alt="Linker afbeelding"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* Middelste afbeelding (groter) */}
+          <div className="relative" style={{ width: "19vw", height: "30vw" }}>
+            <Image
+              src="/image1.png"
+              alt="Middelste afbeelding"
+              fill
+              className="object-cover pl-[0.5vw]"
+            />
+          </div>
+          <div className="flex flex-column w-[40vw] pl-[5vw] text-white">
+            hallor
+          </div>
+        </div>
       </section>
     </div>
   );

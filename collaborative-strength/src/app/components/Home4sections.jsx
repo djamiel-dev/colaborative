@@ -17,7 +17,8 @@ export default function Home4sections() {
   const line4Height = useTransform(scrollYProgress, [0, 1], ["0vw", "30vw"]);
 
   // Tekst animaties
-  const textOpacity = useTransform(scrollYProgress, [0.8, 1], [0, 1]);
+  const textOpacity = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
+  const circleScale = useTransform(scrollYProgress, [0.7, 1], [0.5, 1]);
 
   return (
     <div
@@ -25,7 +26,7 @@ export default function Home4sections() {
       className="relative w-full flex items-end text-[var(--dark)]"
       style={{
         height: "30vw",
-        paddingBottom: "2vw",
+        paddingBottom: "5vw",
       }}
     >
       <div
@@ -46,7 +47,7 @@ export default function Home4sections() {
           >
             <motion.div
               style={{
-                width: "0.12vw",
+                width: "0.11vw",
                 height: line1Height,
                 backgroundColor: "#161616",
               }}
@@ -60,10 +61,40 @@ export default function Home4sections() {
                 width: "18vw",
               }}
             >
+              <motion.div
+                style={{
+                  scale: circleScale,
+                  marginBottom: "1vw",
+                }}
+              >
+                <div
+                  style={{
+                    borderRadius: "50%",
+                    width: "4vw",
+                    height: "4vw",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.11vw solid #161616",
+                    marginBottom: "3vw",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: "600",
+                      fontSize: "1.2vw",
+                      lineHeight: "1",
+                    }}
+                  >
+                    A
+                  </span>
+                </div>
+              </motion.div>
               <h3
                 style={{
                   fontSize: "4vw",
                   fontWeight: "800",
+                  marginBottom: "0.5vw",
                 }}
               >
                 AMBITIE
@@ -84,7 +115,7 @@ export default function Home4sections() {
           >
             <motion.div
               style={{
-                width: "0.12vw",
+                width: "0.11vw",
                 height: line2Height,
                 backgroundColor: "#161616",
               }}
@@ -98,10 +129,40 @@ export default function Home4sections() {
                 width: "18vw",
               }}
             >
+              <motion.div
+                style={{
+                  scale: circleScale,
+                  marginBottom: "1vw",
+                }}
+              >
+                <div
+                  style={{
+                    borderRadius: "50%",
+                    width: "4vw",
+                    height: "4vw",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.11vw solid #161616",
+                    marginBottom: "3vw",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: "600",
+                      fontSize: "1.2vw",
+                      lineHeight: "1",
+                    }}
+                  >
+                    B
+                  </span>
+                </div>
+              </motion.div>
               <h3
                 style={{
                   fontSize: "4vw",
                   fontWeight: "800",
+                  marginBottom: "0.5vw",
                 }}
               >
                 AANPAK
@@ -122,7 +183,7 @@ export default function Home4sections() {
           >
             <motion.div
               style={{
-                width: "0.12vw",
+                width: "0.11vw",
                 height: line3Height,
                 backgroundColor: "#161616",
               }}
@@ -136,10 +197,40 @@ export default function Home4sections() {
                 width: "18vw",
               }}
             >
+              <motion.div
+                style={{
+                  scale: circleScale,
+                  marginBottom: "1vw",
+                }}
+              >
+                <div
+                  style={{
+                    borderRadius: "50%",
+                    width: "4vw",
+                    height: "4vw",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.11vw solid #161616",
+                    marginBottom: "3vw",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: "600",
+                      fontSize: "1.2vw",
+                      lineHeight: "1",
+                    }}
+                  >
+                    C
+                  </span>
+                </div>
+              </motion.div>
               <h3
                 style={{
                   fontSize: "4vw",
                   fontWeight: "800",
+                  marginBottom: "0.5vw",
                 }}
               >
                 SBD
@@ -160,7 +251,7 @@ export default function Home4sections() {
           >
             <motion.div
               style={{
-                width: "0.12vw",
+                width: "0.11vw",
                 height: line4Height,
                 backgroundColor: "#161616",
               }}
@@ -174,10 +265,40 @@ export default function Home4sections() {
                 width: "18vw",
               }}
             >
+              <motion.div
+                style={{
+                  scale: circleScale,
+                  marginBottom: "1vw",
+                }}
+              >
+                <div
+                  style={{
+                    borderRadius: "50%",
+                    width: "4vw",
+                    height: "4vw",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.11vw solid #161616",
+                    marginBottom: "3vw",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: "600",
+                      fontSize: "1.2vw",
+                      lineHeight: "1",
+                    }}
+                  >
+                    D
+                  </span>
+                </div>
+              </motion.div>
               <h3
                 style={{
                   fontSize: "4vw",
                   fontWeight: "800",
+                  marginBottom: "0.5vw",
                 }}
               >
                 REFLECT
