@@ -1,7 +1,39 @@
+"use client";
+
+import { motion, useScroll, useTransform } from "framer-motion";
 import Button from "./components/Button";
 import ScrollDown from "./components/ScrollDown";
 import Home4sections from "./components/Home4sections";
+import Footer from "./components/Footer";
 import Image from "next/image";
+import { useRef } from "react";
+
+const ParallaxImage = ({ src, alt, className, style, yOffset = 50 }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const y = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [`-${yOffset}%`, `${yOffset}%`]
+  );
+
+  return (
+    <motion.div
+      ref={ref}
+      style={{ ...style, y }}
+      className={`relative ${className}`}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+    >
+      <Image src={src} alt={alt} fill className="object-cover" />
+    </motion.div>
+  );
+};
 
 export default function Home() {
   return (
@@ -78,34 +110,28 @@ export default function Home() {
         <div className="relative w-full flex justify-center items-center top-[-6.5vw]">
           <div className="flex items-end" style={{ gap: "0.5vw" }}>
             {/* Linker afbeelding */}
-            <div className="relative" style={{ width: "24vw", height: "33vw" }}>
-              <Image
-                src="/image2.png"
-                alt="Linker afbeelding"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <ParallaxImage
+              src="/image2.png"
+              alt="Linker afbeelding"
+              style={{ width: "24vw", height: "33vw" }}
+              yOffset={8}
+            />
 
             {/* Middelste afbeelding (groter) */}
-            <div className="relative" style={{ width: "31vw", height: "42vw" }}>
-              <Image
-                src="/image1.png"
-                alt="Middelste afbeelding"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <ParallaxImage
+              src="/image1.png"
+              alt="Middelste afbeelding"
+              style={{ width: "31vw", height: "42vw" }}
+              yOffset={12}
+            />
 
             {/* Rechter afbeelding */}
-            <div className="relative" style={{ width: "24vw", height: "33vw" }}>
-              <Image
-                src="/image3.png"
-                alt="Rechter afbeelding"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <ParallaxImage
+              src="/image3.png"
+              alt="Rechter afbeelding"
+              style={{ width: "24vw", height: "33vw" }}
+              yOffset={8}
+            />
           </div>
         </div>
         <div className=" relative z-10 flex items-center flex-col pb-[5vw]">
@@ -126,36 +152,59 @@ export default function Home() {
           <Button href="/about" text="OVER MIJ" />
         </div>
       </section>
-      <section className="relative w-[100vw] min-h-[100vh] bg-[var(--dark)] text-[var(--light-gray)] py-[15vh]">
+      <section className="relative w-[100vw] bg-[var(--dark)] text-[var(--light-gray)] pt-[15vh] pb-[5vw]">
         <h1 className="text-[5.5vw] font-black leading-[5vw] text-[var(--light-gray)] relative text-center w-[100vw] flex justify-center pt-[5vw]">
           <span className="text-[var(--light-gray)] mix-blend-difference inline-block pb-[4vw] z-10">
             FOCUS ZONDER CHAOS
           </span>
         </h1>
-        <div className="relative flex flex-row w-[80vw] left-[10vw] items-end top-[-6.5vw]">
-          <div className="relative" style={{ width: "15vw", height: "20vw" }}>
-            <Image
-              src="/image2.png"
-              alt="Linker afbeelding"
-              fill
-              className="object-cover"
-            />
-          </div>
+        <div className="relative flex flex-row w-[80vw] left-[10vw] items-end top-[-6.5vw] gap-[0.5vw]">
+          <ParallaxImage
+            src="/image5.png"
+            alt="Linker afbeelding"
+            style={{ width: "15vw", height: "20vw" }}
+            yOffset={8}
+          />
 
           {/* Middelste afbeelding (groter) */}
-          <div className="relative" style={{ width: "19vw", height: "30vw" }}>
-            <Image
-              src="/image1.png"
-              alt="Middelste afbeelding"
-              fill
-              className="object-cover pl-[0.5vw]"
-            />
-          </div>
-          <div className="flex flex-column w-[40vw] pl-[5vw] text-white">
-            hallor
+          <ParallaxImage
+            src="/image4.png"
+            alt="Middelste afbeelding"
+            style={{ width: "19vw", height: "30vw", paddingLeft: "0.5vw" }}
+            yOffset={12}
+          />
+          <div className="flex flex-col w-[50vw] pl-[5vw] text-white text-[1.1vw]/[2vw]">
+            <p className="relative pb-[1.5vw]">
+              Als powerlifter kun je makkelijk verdwalen in alle informatie,
+              keuzes en emoties die bij training komen kijken. Je twijfelt
+              misschien over je schema, past dingen impulsief aan op basis van
+              gevoel, of raakt overweldigd door details. Dit is precies waar een
+              coach het verschil maakt.
+            </p>
+            <div
+              className="relative pl-[5vw]"
+              style={{ width: "0.85vw", height: "4vw" }}
+            >
+              <Image
+                src="/arrow.png"
+                alt="Middelste afbeelding"
+                fill
+                className="w-[0.85vw] h-[5vw] object-contain"
+              />
+            </div>
+            <p className="relative pt-[1.5vw]">
+              Ik neem de strategische keuzes uit handen van
+              programmeeraanpassingen tot technische finetuning zodat jij je
+              niet druk hoeft te maken over wat werkt, maar simpelweg kunt
+              uitvoeren. Geen keuzestress, geen ruis. Alleen progressie.
+            </p>
           </div>
         </div>
+        <div className="flex w-full justify-center pb-[5vw]">
+          <Button href="/contact" text="BOEK EEN GESPREK" />
+        </div>
       </section>
+      <Footer />
     </div>
   );
 }
