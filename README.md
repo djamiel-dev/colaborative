@@ -2,6 +2,8 @@
 
 Een website voor mijn powerlifting coaching - gebouwd als persoonlijk project voor mijn studie.
 
+![Website Preview](./screenshot.png)
+
 ## Over het project
 
 Dit project begon als een idee voor een complete website, maar door tijdsbeperkingen heb ik me gefocust op het zo goed mogelijkuitwerken van de homepage. Ik wilde laten zien wat ik kan met moderne web technologieën, dus heb ik ingezet op animaties en een strakke user interface.
@@ -17,10 +19,13 @@ De site is bedoeld voor mensen die via mijn instagram geinteresseerd zijn geraak
 
 ## Technische stack
 
-- **Next.js** - Voor de React framework en routing
-- **Tailwind CSS** - Voor snelle en consistente styling
-- **Framer Motion** - Voor de meeste animaties en transitions
-- **Vercel** - Voor deployment en hosting
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) - Voor de React framework en routing
+
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) - Voor snelle en consistente styling
+
+![Framer Motion](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) - Voor alle animaties en transitions
+
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) - Voor deployment en hosting
 
 ## Wat ik heb geleerd
 
@@ -34,10 +39,19 @@ Tijdens dit project ben ik veel beter geworden in:
 
 ```
 colaborative/
-├── components/          # Alle herbruikbare componenten
-├── pages/              # Next.js pagina's
-├── public/             # Afbeeldingen en video's
-├── styles/             # Global CSS
+├── public/             # Favicon en andere statische bestanden
+├── src/
+│   └── app/           # Next.js 13+ app directory
+│       ├── components/ # Alle herbruikbare componenten
+│       ├── globals.css
+│       ├── layout.js
+│       └── page.js    # Homepage
+├── .gitattributes
+├── .gitignore
+├── jsconfig.json
+├── next.config.mjs
+├── package.json
+├── postcss.config.mjs
 └── README.md
 ```
 
