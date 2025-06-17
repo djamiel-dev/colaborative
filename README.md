@@ -1,50 +1,73 @@
-# Collaborative – Powerlifting Coaching Website
+# Powerlifting Coach Website
 
-## 🧠 Over het project
+Een website voor mijn powerlifting coaching - gebouwd als persoonlijk project voor mijn studie.
 
-Deze website is gebouwd als eindproject binnen mijn opleiding, met als doel het aanbieden van **persoonlijke powerlifting coaching** via een moderne en doordachte user interface. Hoewel het plan initieel was om de volledige website te bouwen, is er vanwege de tijdsdruk gekozen om te focussen op de **homepage** – deze is volledig uitgewerkt en bevat diverse interactieve elementen en animaties.
+## Over het project
 
-De site is gebouwd met **Next.js**, **Tailwind CSS** en **Framer Motion**, en gestructureerd in overzichtelijke componenten. Tijdens het bouwen heb ik veel geleerd over component-based development, state management met `useState`/`useEffect`, en het gebruiken van animaties voor een rijkere beleving.
+Dit project begon als een idee voor een complete website, maar door tijdsbeperkingen heb ik me gefocust op het zo goed mogelijkuitwerken van de homepage. Ik wilde laten zien wat ik kan met moderne web technologieën, dus heb ik ingezet op animaties en een strakke user interface.
 
-## ⚙️ Technologieën
+De site is bedoeld voor mensen die via mijn instagram geinteresseerd zijn geraakt in mijn coaching en meer willen weten. De homepage geeft bezoekers een goede eerste indruk van wat ik te bieden heeft.
 
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Vercel](https://vercel.com/) (voor hosting)
-- Git & GitHub (versiebeheer)
+## Wat ik heb gebouwd
 
-## 📁 Structuur
+- **Smooth animaties** - Met Framer Motion voor professionele uitstraling
+- **Parallax scrolling** - Achtergrond beweegt mee tijdens scrollen
+- **Fade-in effecten** - Elementen komen mooi in beeld
+- **Scroll indicator** - Laat zien dat er meer content naar beneden is
 
-De code is opgesplitst in herbruikbare componenten zoals knoppen, scroll indicators, navigatie en inhoudssecties. De mappenstructuur is overzichtelijk opgezet, met aparte mappen voor:
+## Technische stack
 
-- `components/` – herbruikbare UI-componenten
-- `pages/` – routing via Next.js
-- `public/` – afbeeldingen en video's
-- `styles/` – globale styling via Tailwind-config
+- **Next.js** - Voor de React framework en routing
+- **Tailwind CSS** - Voor snelle en consistente styling
+- **Framer Motion** - Voor de meeste animaties en transitions
+- **Vercel** - Voor deployment en hosting
 
-## 🎨 Gebruikte animaties
+## Wat ik heb geleerd
 
-De homepage bevat verschillende geavanceerde animaties via Framer Motion:
+Tijdens dit project ben ik veel beter geworden in:
+- Component-based denken (alles opdelen in herbruikbare stukjes)
+- React hooks zoals `useState` en `useEffect`
+- Animaties implementeren zonder dat de site traag wordt
+- Git workflow en commits
 
-- **Parallax scrolling**: Afbeeldingen bewegen mee op basis van de scrollpositie (`useScroll` + `useTransform`)
-- **Fade-in on scroll**: Elementen verschijnen met fade-in wanneer ze in beeld komen
-- **Scroll indicator**: Visuele hint voor gebruikers om verder te scrollen
-- **Dynamische navbar (optioneel)**: (Toekomstige uitbreiding) met kleurverandering op scroll
+## Projectstructuur
 
-## 🤖 Gebruik van AI
+```
+colaborative/
+├── components/          # Alle herbruikbare componenten
+├── pages/              # Next.js pagina's
+├── public/             # Afbeeldingen en video's
+├── styles/             # Global CSS
+└── README.md
+```
 
-Voor dit project heb ik AI-tools zoals **ChatGPT** en **Cursor** op een ondersteunende manier ingezet. In plaats van de volledige code door AI te laten genereren, heb ik bewust gekozen om:
+## Lokaal draaien
 
-- Eerst zelf na te denken over de gewenste structuur en logica
-- Pas daarna AI stap voor stap te gebruiken als hulp bij het uitwerken
-- Alle gegenereerde code volledig te begrijpen en indien nodig aan te passen
+Om het project zelf te proberen:
 
-Zo heb ik niet alleen een werkend product opgeleverd, maar ben ik ook technisch sterker geworden in React/Next.js en moderne webontwikkeling.
+```bash
+git clone https://github.com/djamiel-dev/colaborative.git
+cd colaborative
+npm install
+npm run dev
+```
 
-## 🚀 Installatie
+Open dan [http://localhost:3000](http://localhost:3000) in je browser.
 
-1. Clone deze repository  
-   ```bash
-   git clone https://github.com/djamiel-dev/colaborative.git
-   cd colaborative
+## Toekomstplannen
+
+Als ik meer tijd had gehad, zou ik nog willen toevoegen:
+- Meer pagina's (over, contact, services)
+- Een booking systeem
+- Blog functionaliteit
+
+## Deployment
+
+De site is automatisch gedeployed via Vercel. Elke push naar main branch wordt automatisch live gezet.
+
+---
+
+**Gebouwd door:** [djamiel-dev](https://github.com/djamiel-dev)  
+**Live versie:** [Bekijk de website](https://colaborative.vercel.app)
+
+*Dit project is onderdeel van mijn studie en gemaakt om te laten zien wat ik kan met moderne web development.*
