@@ -11,12 +11,12 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Collaborative Strength",
-  description: "Djamiel Saou",
+  description: "Powerlifting coaching op individuele basis",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="nl">
       <body className={`${poppins.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
