@@ -1,18 +1,18 @@
-export default function Logo({ className = "" }) {
+export default function Logo({ className = "", blend = true }) {
   return (
     <svg
       viewBox="0 0 42 55"
       fill="none"
       aria-hidden="true"
-      className={`mix-blend-difference ${className}`}
+      className={`${blend ? "mix-blend-difference" : ""} ${className}`}
     >
       <path
         d="M24.2677 45.268L4.91606 45.3443L27.0791 23.1812L36.7487 23.143L36.7105 32.8126L24.2677 45.268Z"
-        fill="#F9F9F9"
+        fill="currentColor"
       />
       <path
         d="M17.3446 9.73739L36.8196 9.73754L14.6031 31.9541L4.87186 31.9541L4.87186 22.2229L17.3446 9.73739Z"
-        fill="#F9F9F9"
+        fill="currentColor"
       />
     </svg>
   );

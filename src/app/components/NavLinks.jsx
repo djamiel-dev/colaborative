@@ -1,5 +1,5 @@
 const links = [
-  { href: "/#gratis-schema", label: "Gratis schema" },
+  { href: "#gratis-schema", label: "Gratis schema" },
   { href: "/diensten", label: "Diensten" },
   { href: "/about", label: "Over mij" },
   { href: "/blog", label: "Blog" },
@@ -9,7 +9,7 @@ export default function NavLinks({ variant = "bar", onNavigate }) {
   if (variant === "menu") {
     return (
       <ul className="flex flex-col gap-7">
-        {links.map((link) => (
+        {[{ href: "/", label: "Home" }, ...links].map((link) => (
           <li key={link.href}>
             <a
               href={link.href}

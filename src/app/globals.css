@@ -27,9 +27,14 @@
 html,
 body {
   width: 100vw;
-  overflow-x: hidden;
   background: var(--light-gray);
   font-family: var(--font-poppins);
+}
+
+/* Alleen op html: dan geldt het voor de viewport. Op body maakt het body een
+   scrollcontainer en werkt position: sticky niet meer. */
+html {
+  overflow-x: hidden;
 }
 
 a,
@@ -90,4 +95,14 @@ a div > div {
     width: auto;
     flex: 1 1 auto;
   }
+}
+
+/* Stretches the button to its container; the face takes the leftover width next to the arrow. */
+.coach-button.coach-button--full {
+  width: 100%;
+}
+
+.coach-button--full .coach-button__face {
+  width: auto;
+  flex: 1 1 auto;
 }

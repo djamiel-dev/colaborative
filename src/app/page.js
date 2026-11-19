@@ -23,7 +23,7 @@ export default function Home() {
             <Image
               src="/logo-liggend.png"
               alt="Collaborative Strength"
-              width={1457}
+              width={1530}
               height={220}
               priority
               className="h-auto w-[62vw] pb-6 opacity-80 invert md:w-[24vw] md:pt-[8vw] md:pb-[2.4vw]"
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 flex flex-col items-stretch px-6 pt-8 pb-16 md:items-center md:px-0 md:pt-0 md:pb-[5vw]">
           <p className="w-full pb-4 text-left text-[1.35rem] font-bold leading-snug md:w-[65vw] md:pb-[2vw] md:text-center md:text-[2.5vw] md:leading-normal">
-            Een passend trainings systeem ontwikkelen we door op wetenschap en
+            Een passend trainingssysteem ontwikkelen we door op wetenschap en
             input van jou te handelen.
           </p>
           <p className="w-full text-left text-[0.9375rem] leading-6 md:w-[45vw] md:text-center md:text-[1.1vw] md:leading-[2vw]">

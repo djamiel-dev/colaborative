@@ -105,10 +105,10 @@ export default function BookingForm() {
             alt="Djamiel met een atleet na een kennismaking"
             yOffset={3}
             sizes="(max-width: 768px) 90vw, 32vw"
-            className="h-80 w-full md:h-[38vw]"
+            className="order-2 h-80 w-full md:order-none md:h-[38vw]"
           />
           {!sent && (
-            <div>
+            <div className="order-1 md:order-none">
               <Button submit form="booking-form" text="VERSTUUR" />
             </div>
           )}

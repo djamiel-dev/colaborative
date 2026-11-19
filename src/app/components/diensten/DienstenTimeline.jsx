@@ -133,7 +133,7 @@ export default function DienstenTimeline() {
               yOffset={6}
               fit={step.title === "Wekelijks schema" ? "contain" : "cover"}
               sizes="(max-width: 768px) 90vw, 24vw"
-              className="col-span-2 h-52 w-full bg-white md:col-span-1 md:h-[15vw]"
+              className="col-start-2 h-44 w-full bg-white md:col-start-auto md:h-[15vw]"
             />
           </motion.article>
         ))}

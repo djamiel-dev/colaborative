@@ -74,7 +74,10 @@ export default function Navbar() {
       />
       <div className="relative z-50 mx-auto flex w-full items-center justify-between px-5 py-4 md:px-[4vw] md:py-[0.5vw]">
         <a href="/" className="flex items-center">
-          <Logo className="h-auto w-10 md:w-[3vw]" />
+          <Logo
+            blend={!scrolled || open}
+            className="h-auto w-10 transition-colors duration-500 md:w-[3vw]"
+          />
         </a>
 
         <div className="hidden md:block">

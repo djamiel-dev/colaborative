@@ -37,14 +37,19 @@ export default function Button({
   text = "Boek een gesprek",
   submit = false,
   form,
+  onClick,
+  fullWidth = false,
 }) {
   const [isHovered, setIsHovered] = useState(false);
-  const Tag = submit ? "button" : "a";
+  const isButton = submit || Boolean(onClick);
+  const Tag = isButton ? "button" : "a";
 
   return (
     <Tag
-      {...(submit ? { type: "submit", form } : { href })}
-      className={`coach-button ${submit ? "border-0 bg-transparent p-0 text-left" : ""}`}
+      {...(isButton
+        ? { type: submit ? "submit" : "button", form, onClick }
+        : { href })}
+      className={`coach-button ${fullWidth ? "coach-button--full" : ""} ${isButton ? "border-0 bg-transparent p-0 text-left" : ""}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

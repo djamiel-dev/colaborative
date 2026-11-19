@@ -15,7 +15,7 @@ const traits = [
   },
   {
     title: "LEERGIERIG",
-    text: "Ten alle tijden bezig mezelf blijven verbeteren als coach door te reflecteren en eigen research.",
+    text: "Te allen tijde bezig mezelf blijven verbeteren als coach door te reflecteren en eigen research.",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function AboutStory() {
         Begonnen om fitter te worden en af te vallen. Ik werd al snel verliefd
         op de gym en wilde alles erover uitzoeken. Sinds dag 1 al een grote
         aanleg voor de SBD gehad. Voordat ik het wist zat ik LiftVault voor
-        schema&apos;s af te scrollen en Johnny Candito video&apos;s te kijken.
+        schema&apos;s af te scrollen en Jonnie Candito video&apos;s te kijken.
         Deze kennis probeerde ik al snel uit te oefenen door niet alleen
         mezelf te coachen maar ook vele vrienden om nog meer te kunnen leren.
       </StorySplit>

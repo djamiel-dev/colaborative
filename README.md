@@ -1,63 +1,58 @@
-# Powerlifting Coach Website
+# Collaborative Strength
 
-Een website voor mijn powerlifting coaching - gebouwd als persoonlijk project voor mijn studie.
+Website voor mijn powerlifting coaching op individuele basis. Ontworpen in Figma en gebouwd met Next.js, Tailwind CSS en Framer Motion.
 
 ![Website Preview](./screenshot.png)
 
+**Live:** [colaborative-strength-website.vercel.app](https://colaborative-strength-website.vercel.app/)  
+**Case study:** [Collaborative Strength in mijn portfolio](https://portfolio-kappa-gilt-e200sltsky.vercel.app/work/collaborative-strength)
+
 ## Over het project
 
-Dit project begon als een idee voor een complete website, maar door tijdsbeperkingen heb ik me gefocust op het zo goed mogelijkuitwerken van de homepage. Ik wilde laten zien wat ik kan met moderne web technologieën, dus heb ik ingezet op animaties en een strakke user interface.
+Atleten weten vaak niet wat ze van een coach kunnen verwachten, en elke coach werkt anders. Mijn coaching is een samenwerking: we maken het plan samen, op basis van jouw input. De website legt uit hoe dat werkt, zodat de juiste mensen een gesprek boeken en anderen zien dat het niet bij ze past.
 
-De site is bedoeld voor mensen die via mijn instagram geinteresseerd zijn geraakt in mijn coaching en meer willen weten. De homepage geeft bezoekers een goede eerste indruk van wat ik te bieden heeft.
+De site is bedoeld voor mensen die via Instagram interesse hebben gekregen en meer willen weten. Een gratis kennismakingscall is vanaf elke pagina te boeken.
+
+## Pagina's
+
+- **Home** – de vraag aan de bezoeker, de vier stappen (ambitie, aanpak, SBD, reflect) en "Focus zonder chaos"
+- **Diensten** – hoe de coaching in elkaar zit, als tijdlijn
+- **Over mij** – ervaring, waar de passie begon en mijn visie op coachen
+- **Blog** – overzicht van blogposts
+- **Contact** – formulier om een gratis call te plannen
 
 ## Wat ik heb gebouwd
 
-- **Smooth animaties** - Met Framer Motion voor professionele uitstraling
-- **Parallax scrolling** - Achtergrond beweegt mee tijdens scrollen
-- **Fade-in effecten** - Elementen komen mooi in beeld
-- **Scroll indicator** - Laat zien dat er meer content naar beneden is
+- **Animaties** met Framer Motion: parallax-foto's, fade-ins en tijdlijnen die meegroeien tijdens het scrollen
+- **Een menu dat zich aanpast**: boven witte secties wordt het frosted glass met donkere tekst
+- **Een knop met hover-effect**: de hoeken schuiven, de knop vult zich en de pijl draait
+- **Responsive**: op mobiel een volledig schermmenu en aangepaste layouts
 
 ## Technische stack
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) - Voor de React framework en routing
-
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) - Voor snelle en consistente styling
-
-![Framer Motion](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) - Voor alle animaties en transitions
-
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) - Voor deployment en hosting
-
-## Wat ik heb geleerd
-
-Tijdens dit project ben ik veel beter geworden in:
-- Component-based denken (alles opdelen in herbruikbare stukjes)
-- React hooks zoals `useState` en `useEffect`
-- Animaties implementeren zonder dat de site traag wordt
-- Git workflow en commits
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Framer Motion](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Projectstructuur
 
 ```
-colaborative/
-├── public/             # Favicon en andere statische bestanden
-├── src/
-│   └── app/           # Next.js 13+ app directory
-│       ├── components/ # Alle herbruikbare componenten
-│       ├── globals.css
-│       ├── layout.js
-│       └── page.js    # Homepage
-├── .gitattributes
-├── .gitignore
-├── jsconfig.json
-├── next.config.mjs
-├── package.json
-├── postcss.config.mjs
-└── README.md
+src/app/
+├── page.js              # Home
+├── diensten/page.js
+├── about/page.js        # Over mij
+├── blog/page.js
+├── contact/page.js
+├── components/          # Gedeelde componenten (Navbar, Button, PageHero, ...)
+│   ├── about/
+│   ├── blog/
+│   ├── contact/
+│   └── diensten/
+├── globals.css
+└── layout.js
+public/                  # Afbeeldingen, logo en achtergrondvideo
+figma spullen/           # Exports uit het Figma-ontwerp
 ```
 
 ## Lokaal draaien
-
-Om het project zelf te proberen:
 
 ```bash
 git clone https://github.com/djamiel-dev/colaborative.git
@@ -66,22 +61,14 @@ npm install
 npm run dev
 ```
 
-Open dan [http://localhost:3000](http://localhost:3000) in je browser.
+Open daarna [http://localhost:3000](http://localhost:3000).
 
-## Toekomstplannen
+## Nog te doen
 
-Als ik meer tijd had gehad, zou ik nog willen toevoegen:
-- Meer pagina's (over, contact, services)
-- Een booking systeem
-- Blog functionaliteit
+- Gratis schema
+- Blogposts inhoudelijk uitwerken
+- Het boekingsformulier echt laten versturen
 
 ## Deployment
 
-De site is automatisch gedeployed via Vercel. Elke push naar main branch wordt automatisch live gezet.
-
----
-
-**Gebouwd door:** [djamiel-dev](https://github.com/djamiel-dev)  
-**Live versie:** [Bekijk de website](https://colaborative.vercel.app)
-
-*Dit project is onderdeel van mijn studie en gemaakt om te laten zien wat ik kan met moderne web development.*
+De site draait op Vercel. Elke push naar `main` wordt automatisch live gezet.
